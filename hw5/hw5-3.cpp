@@ -16,7 +16,7 @@ public:
     double end;
     double increment;
     int size;
-    float input[1000] = {0};
+    float *input;
     // constructor, start: start position; end: end position; increment: the increment "dx"
     // You should calculate the value in range [start, end], with increment "increment"
     LookupTable(double start, double end, double increment)
@@ -85,6 +85,7 @@ private:
     void init()
     {
         this->size = (int)((end - start) / increment) + 1;
+        input = new float[size];
         input[0] = this->start;
         input[this->size - 1] = this->end;
         for (size_t i = 1; i < this->size -1; i++)
