@@ -33,14 +33,10 @@ public:
 
     void print()
     {
-        std::cout<<"start:";
-        std::cout<<this->start<<std::endl;
-        std::cout<<"end:";
-        std::cout<<this->end<<std::endl;
-        std::cout<<"increment:";
-        std::cout<<this->increment<<std::endl;
-        std::cout<<"size:";
-        std::cout<<this->size<<std::endl;
+        std::cout<<"start:"<<this->start<<std::endl;
+        std::cout<<"end:"<<this->end<<std::endl;
+        std::cout<<"increment:"<<this->increment<<std::endl;
+        std::cout<<"size:"<<this->size<<std::endl;
         std::cout<<"input:";
         
         for (size_t i = 0; i < this->size; i++)
