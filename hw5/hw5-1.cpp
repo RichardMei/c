@@ -1,3 +1,9 @@
+/**
+ * author Richard
+ * date 2019-11-01
+ * compile clang++ -std=c++17
+ */
+
 #include <iostream>
 #include <math.h>
 
@@ -42,7 +48,7 @@ class MaximumAnalyser : public DataAnalyser
 class MinimumAnalyser : public DataAnalyser
 {
     float calculate(float* data, size_t size) {
-        float min = data[8];
+        float min = data[0];
         for (size_t i = 1; i < size; i++)
         {
             if (data[i] < min)
